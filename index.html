@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Customer Satisfaction Survey Form</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="main">
+    
+    
+<h1 id="title">Travel Agency <br> Customer Satisfaction Survey Form</h1>
+
+<p id="description"><em>Thank you for taking the time to help us serve you better</em></p>
+
+<form id="survey-form">
+
+    <label id="name-label" for="name"><strong>Name</strong> 
+    <input id="name" type="text" placeholder="Enter your name" required> 
+</label>
+
+    <label id="email-label" for="email"><strong>Email</strong>
+    <input id="email" type="email" placeholder="Enter your Email" required> 
+</label>
+
+    <label id="number-label" for="number"><strong>Age <span class="smaller-letters">(optional)</span></strong>
+    <input id="number" type="number" min="18" max="100" placeholder="Age"> 
+</label>
+
+    <label for="dropdown"><strong>Which option best describes your current role?</strong> 
+        <select name ="current role" id="dropdown"> 
+        <option value="" selected disabled>Select current role</option>
+        <option value="Student">Student</option>
+        <option value="Full Time Job">Full Time Job</option>
+        <option value="Part Time Job">Part time Job</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+    </select>
+</label>
+
+<legend><strong>Will you use our travel agency again in future?</strong></legend>
+    <label for="definitely"> 
+        <input id="definitely" type="radio" name="Definitely-Maybe-Not sure" value="Definitely" checked> Definitely
+    </label> 
+    <label for="maybe">
+    <input id="maybe" value="Maybe" type="radio" name="Definitely-Maybe-Not sure"> Maybe
+    </label> 
+    <label for="not-sure">
+        <input id="not-sure" value="Not sure" type="radio" name="Definitely-Maybe-Not sure"> Not sure
+    </label> 
+    
+    <label for="dropdown-2"><strong>How satisfied are you with our service?</strong>
+        <select name ="service satisfaction" id="dropdown-2"> 
+        <option value="" selected disabled>Select an option</option>
+        <option value="Student">Very satisfied</option>
+        <option value="Full Time Job">Somewhat satisfied</option>
+        <option value="Part Time Job">Neutral</option>
+        <option value="Prefer not to say">Somewhat dissatisfied</option>
+        <option value="Other">Very dissatisfied</option>
+    </select>
+</label>
+
+<legend><strong>Why did you choose us over other travel agencies? <span class="smaller-letters">(Check all that apply)</span></strong> </legend>
+<label for="personal-experience">
+    <input id="personal-experience" value="Personal experience with us" type="checkbox" name="why us"> Personal experience with us   
+    </label> 
+    <label for="recommendation">
+        <input id="recommendation" value="A recommendation" type="checkbox" name="why us"> A recommendation   
+        </label>
+    <label for="prices">
+        <input id="prices" value="Our prices" type="checkbox" name="why us"> Our prices   
+        </label> 
+    <label for="advertising">
+        <input id="advertising" value="Advertising" type="checkbox" name="why us"> Advertising   
+        </label> 
+    <label for="reputation">
+        <input id="reputation" value="The reputation of our agency" type="checkbox" name="why us"> The reputation of our agency   
+        </label> 
+        
+    <label for="other">
+        <input id="other" value="Other" type="checkbox" name="why us" onclick="myFunction()"> Other 
+     </label>  
+
+     <label id="other-specify" for="other-specify">
+        <input id="other-specify" type="text" name="why us" placeholder="Other, please specify">   
+    </label>
+
+        <label for="textarea"><strong>How can we improve? Please tell us in your own words:</strong> 
+            
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+        </label>
+          
+          <button id="submit" type="submit">Submit</button>   
+          
+    </form>
+    <script>
+        function myFunction() {
+          var checkBox = document.getElementById("other");
+          var text = document.getElementById("other-specify");
+          if (checkBox.checked == true){
+        text.style.width="100%";
+        text.style.webkitTransitionDuration="width 0.5s ease-in-out";
+        text.style.transition="width 0.5s ease-in-out";
+    }
+        
+        else {
+            text.style.width="60%";
+        }
+
+};
+
+
+
+    
+    
+
+</script>
+    
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    
+</body>
+</html>
