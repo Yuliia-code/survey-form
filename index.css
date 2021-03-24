@@ -20,9 +20,6 @@ option {
     height: 100%;
     width: 100%;
     z-index: -1;
-    text-align:center;
-    font-family:'Poppins', sans-serif;
-    font-weight: 500;
     background-image:linear-gradient(115deg, rgba(30, 30, 243, 0.8), 
     rgba(123, 232, 247, 0.7)), url("images/beach-1630540.jpg");
     background-size:cover;
@@ -34,12 +31,16 @@ option {
 h1{ 
     text-align:center;
     margin-top: 35px;
+    font-weight: 600;
+    font-family:'Poppins', sans-serif;
+    font-size: 28px;
 }
 
 p {
     font-size: 20px;
     font-weight: 300;
     text-align:center;
+    font-family:'Poppins', sans-serif;
 }
 
 .smaller-letters {
@@ -56,6 +57,7 @@ p {
     font-size: 18px;
     display:flex;
     flex-direction: column;
+    font-family:'Poppins', sans-serif;
 }
 
 input[type=text], [type=email], [type=number], #dropdown, #dropdown-2 {
