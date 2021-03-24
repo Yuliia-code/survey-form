@@ -57,7 +57,6 @@ p {
     font-size: 18px;
     display:flex;
     flex-direction: column;
-    font-family:'Poppins', sans-serif;
 }
 
 input[type=text], [type=email], [type=number], #dropdown, #dropdown-2 {
