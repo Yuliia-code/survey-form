@@ -62,6 +62,7 @@
 </label>
 
 <legend><strong>Why did you choose us over other travel agencies? <span class="smaller-letters">(Check all that apply)</span></strong> </legend>
+
 <label for="personal-experience">
     <input id="personal-experience" value="Personal experience with us" type="checkbox" name="why us"> Personal experience with us   
     </label> 
@@ -76,42 +77,18 @@
         </label> 
     <label for="reputation">
         <input id="reputation" value="The reputation of our agency" type="checkbox" name="why us"> The reputation of our agency   
-        </label> 
-        
+        </label>  
     <label for="other">
-        <input id="other" value="Other" type="checkbox" name="why us" onclick="myFunction()"> Other 
+        <input id="other" value="Other" type="checkbox" name="why us"> Other 
      </label>  
-
-     <label id="other-specify" for="other-specify">
-        <input id="other-specify" type="text" name="why us" placeholder="Other, please specify">   
-    </label>
-
+      
         <label for="textarea"><strong>How can we improve? Please tell us in your own words:</strong> 
-            
         <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
         </label>
           
           <button id="submit" type="submit">Submit</button>   
           
-    </form>
-    <script>
-        function myFunction() {
-          var checkBox = document.getElementById("other");
-          var text = document.getElementById("other-specify");
-          if (checkBox.checked == true){
-        text.style.width="100%";
-        text.style.webkitTransitionDuration="width 0.5s ease-in-out";
-        text.style.transition="width 0.5s ease-in-out";
-    }
-        
-        else {
-            text.style.width="85%";
-        }
-
-};
-
-</script>
-    
+    </form> 
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
